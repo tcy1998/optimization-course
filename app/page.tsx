@@ -22,17 +22,26 @@ export default function Home() {
           <span>专业选修课</span>
         </div>
 
-        <div className="download-card">
+        <section className="download-card" aria-labelledby="materials-title">
           <div>
             <p className="resource-label">COURSE MATERIAL</p>
-            <h2>课程 PPT</h2>
-            <p>包含课程各章节课件，第四章已更新为公式显示修复版。下载后解压即可查看。</p>
+            <h2 id="materials-title">课程 PPT</h2>
           </div>
-          <a href="optimization-course-ppt.zip?v=20261103" download>
-            下载课程 PPT
-            <span aria-hidden="true">↓</span>
-          </a>
-        </div>
+          <ul className="chapter-list">
+            <li>
+              <span>第四章</span>
+              <a href="chapter-04.pptx" download="第四章.pptx">下载 PPT</a>
+            </li>
+            <li>
+              <span>第五章</span>
+              <span className="pending">待上传</span>
+            </li>
+            <li>
+              <span>第六章</span>
+              <span className="pending">待上传</span>
+            </li>
+          </ul>
+        </section>
       </section>
 
       <footer>

@@ -94,10 +94,6 @@ h1 {
 .course-meta span + span { border-left: 1px solid var(--line); }
 
 .download-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 48px;
-  align-items: center;
   margin-top: 72px;
   padding: 38px 40px;
   background: var(--soft);
@@ -118,19 +114,16 @@ h1 {
 }
 
 .download-card a {
-  min-width: 180px;
-  padding: 15px 18px;
-  color: #fff;
-  background: var(--ink);
-  text-decoration: none;
-  text-align: center;
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
   font-size: 14px;
   font-weight: 700;
 }
 
 .download-card a:hover,
 .download-card a:focus-visible {
-  background: var(--blue);
+  color: var(--ink);
 }
 
 .download-card a:focus-visible {
@@ -138,7 +131,10 @@ h1 {
   outline-offset: 3px;
 }
 
-.download-card a span { margin-left: 18px; }
+.chapter-list { list-style: none; padding: 0; margin: 24px 0 0; }
+.chapter-list li { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px 0; border-top: 1px solid var(--line); font-size: 16px; }
+.chapter-list li:last-child { padding-bottom: 0; }
+.pending { color: var(--muted); font-size: 14px; }
 
 footer {
   border-top: 1px solid var(--line);
@@ -162,6 +158,5 @@ footer .wrap {
   .course-meta span,
   .course-meta span:first-child { padding: 0; }
   .course-meta span + span { border: 0; }
-  .download-card { grid-template-columns: 1fr; gap: 28px; margin-top: 52px; padding: 28px 24px; }
-  .download-card a { width: 100%; }
+  .download-card { margin-top: 52px; padding: 28px 24px; }
 }
