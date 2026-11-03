@@ -26,9 +26,9 @@ export default function Home() {
           <div>
             <p className="resource-label">COURSE MATERIAL</p>
             <h2>课程 PPT</h2>
-            <p>包含课程各章节课件，点击下载后解压即可查看。</p>
+            <p>包含课程各章节课件，第四章已更新为公式显示修复版。下载后解压即可查看。</p>
           </div>
-          <a href="optimization-course-ppt.zip" download>
+          <a href="optimization-course-ppt.zip?v=20261103" download>
             下载课程 PPT
             <span aria-hidden="true">↓</span>
           </a>
