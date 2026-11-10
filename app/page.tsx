@@ -12,7 +12,8 @@ const chapters = [
     number: "05", title: "第五章 · 无约束最优化",
     animations: [
       ["conjugate-gradient", "最速下降与共轭梯度", "在同一个正定二次函数上比较两条路径，看扭摆怎样出现。"],
-      ["newton-dfp", "Newton 与 DFP", "对比直接利用 Hessian 的 Newton 步，以及由梯度差更新曲率近似的 DFP 步。"],
+      ["newton-dfp", "Newton 与 DFP", "在 Rosenbrock 函数的弯谷中对比阻尼 Newton 与 DFP，每帧标出实际接受的步长。"],
+      ["descent-3d", "三维曲面上的搜索轨迹", "观察最速下降与共轭梯度怎样沿曲面下降。底面的虚线对应俯视图上的路径。"],
       ["simplex", "可变多面体法", "用三角形的反射、扩展和收缩演示如何只靠函数值搜索。"],
     ],
   },
