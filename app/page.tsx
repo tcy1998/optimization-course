@@ -1,4 +1,6 @@
 import Animation from "./animation";
+import katex from "katex";
+import { derivations } from "./derivations";
 
 const chapters = [
   {
@@ -78,12 +80,26 @@ export default function Home() {
               <li key={number}>
                 <div className="chapter-row">
                   <span>{title}</span>
-                  <a href={"chapter-" + number + ".pptx"} download={title + ".pptx"}>下载 PPT</a>
+                  <a href={"chapter-" + number + ".pptx" + (number === "06" ? "?v=aspect-revised" : "")} download={title + ".pptx"}>下载 PPT</a>
                 </div>
                 <details className="chapter-animations">
                   <summary>算法动图（{animations.length}）</summary>
                   {animations.map(([id, title, description]) => (
-                    <Animation key={id} id={id} title={title} description={description} />
+                    <Animation key={id} id={id} title={title} description={description}>
+                      <details className="derivation" open>
+                        <summary>公式与推导</summary>
+                        <ol>
+                          {derivations[id].map(([formula, explanation]) => (
+                            <li key={formula}>
+                              <div className="formula" dangerouslySetInnerHTML={{
+                                __html: katex.renderToString(formula, { displayMode: true, throwOnError: true }),
+                              }} />
+                              <p>{explanation}</p>
+                            </li>
+                          ))}
+                        </ol>
+                      </details>
+                    </Animation>
                   ))}
                 </details>
               </li>
