@@ -4,7 +4,7 @@ import { derivations } from "./derivations";
 
 const chapters = [
   {
-    number: "04", title: "第四章 · 一维搜索",
+    number: "04", title: "第一周 · 一维搜索",
     animations: [
       ["golden", "黄金分割搜索", "比较两个试探点的函数值，逐步缩小包含极小点的区间。"],
       ["midpoint", "中点法", "看中点切线的斜率如何决定舍去哪一半。"],
@@ -15,7 +15,7 @@ const chapters = [
     ],
   },
   {
-    number: "05", title: "第五章 · 无约束最优化",
+    number: "05", title: "第二周 · 无约束最优化",
     animations: [
       ["conjugate-gradient", "最速下降与共轭梯度", "在同一个正定二次函数上比较两条路径，看扭摆怎样出现。"],
       ["newton-dfp", "Newton 与 DFP", "在 Rosenbrock 函数的弯谷中对比阻尼 Newton 与 DFP，每帧标出实际接受的步长。"],
@@ -32,7 +32,7 @@ const chapters = [
     ],
   },
   {
-    number: "06", title: "第六章 · 约束最优化",
+    number: "06", title: "第三周 · 约束最优化",
     animations: [
       ["lagrange", "等式约束与 Lagrange 乘子", "沿可行线找到相切点，观察目标梯度和约束法向量的关系。"],
       ["kkt", "KKT 条件与活跃约束", "用课件第 8–13 页的例题，逐步看可行域、活跃约束和加权法向量的平衡。"],
@@ -106,7 +106,7 @@ export default function Home() {
             ))}
             <li>
               <div className="chapter-row">
-                <span>新一周 · 具身智能导论第三章</span>
+                <span>第四周 · 具身智能导论第三章</span>
                 <a href="embodied-intelligence-chapter-03.pptx" download="具身智能导论_第3章.pptx">下载 PPT</a>
               </div>
             </li>
