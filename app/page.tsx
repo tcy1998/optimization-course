@@ -106,7 +106,7 @@ export default function Home() {
             ))}
             <li>
               <div className="chapter-row">
-                <span>第四周 · 具身智能导论第三章</span>
+                <span>第四周 · 强化学习</span>
                 <a href="embodied-intelligence-chapter-03.pptx" download="具身智能导论_第3章.pptx">下载 PPT</a>
               </div>
             </li>
